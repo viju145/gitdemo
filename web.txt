@@ -1,0 +1,16 @@
+- hosts: webserver
+  tasks: 
+   - copy: scr=/etc/passwd
+   	   dest=/tmp/
+	   owner=ubuntu
+	   group=ubuntu
+	   mode=777
+- hosts: database
+  tasts:
+  - copy: src=/etc/passwd
+          dest=/tmp/
+	  owner=ubuntu
+	  group=ubuntu
+	  mode=777
+- file: path=/tmp/ansible
+        state=directory
