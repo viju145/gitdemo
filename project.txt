@@ -1,0 +1,3 @@
+welcome to the new project
+echo "hello i am vijay"
+echo "i am from pune"
